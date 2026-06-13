@@ -38,12 +38,6 @@ Most observed patterns in TCR data (e.g., V gene usage, motifs) are influenced b
 
 ---
 
-### 3️⃣ Motif Analysis (Baseline-aware)
-- Motif frequency comparison vs baseline repertoire  
-- Avoids misleading interpretation of common motifs  
-
----
-
 ### 4️⃣ Visualization Module
 - Enrichment barplots  
 - Distribution comparisons  
@@ -55,7 +49,7 @@ Most observed patterns in TCR data (e.g., V gene usage, motifs) are influenced b
 
 - Selective enrichment of TRBV genes (e.g., TRBV29-1)  
 - Preference for shorter CDR3 lengths (~11–14 amino acids)  
-- Many motif patterns lose significance after baseline correction  
+
 
 ---
 
