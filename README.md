@@ -53,12 +53,6 @@ Most observed patterns in TCR data (e.g., V gene usage, motifs) are influenced b
 
 ---
 
-## 🧠 Biological Interpretation
-
-CMV-associated repertoires show subtle, broadly distributed deviations from the human baseline, consistent with chronic immune engagement and long-term immune adaptation. In contrast, EBV-associated repertoires exhibit more pronounced and selective deviations, suggesting stronger antigen-driven clonal expansion rather than global repertoire remodeling.
-
----
-
 ## 🛠 Tech Stack
 
 - Python 🐍  
