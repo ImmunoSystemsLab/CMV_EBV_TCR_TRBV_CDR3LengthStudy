@@ -66,11 +66,71 @@ Instead:
 
 ## 📊 Example Insights
 
-Analysis of CMV and EBV repertoires showed that:
+Baseline-aware analysis revealed that several apparent TCR signals can be misleading when interpreted without comparison to healthy repertoire background.
 
-- Some apparent V gene signals disappear after baseline correction
-- Highly abundant genes may reflect repertoire architecture rather than antigen specificity
-- True antigen-associated enrichment requires comparison against background usage
+### 🔬 Example 1 — TRBV Gene Enrichment (CMV)
+
+| TRBV Gene | Human Baseline | CMV Frequency | log2 Enrichment | Interpretation |
+|---|---:|---:|---:|---|
+| TRBV29-1 | 0.0117 | 0.0507 | +2.12 | Relative enrichment after baseline correction |
+| TRBV12-3 | 0.0133 | 0.0465 | +1.80 | Low baseline gene showing increased usage |
+| TRBV20-1 | 0.0392 | 0.0867 | +1.15 | Expanded but requires biological validation |
+| TRBV7-9 | 0.1743 | 0.0551 | -1.66 | High baseline gene depleted in CMV |
+| TRBV4-1 | 0.1622 | 0.0276 | -2.55 | Apparent loss due to baseline comparison |
+
+**Observation:**  
+High-frequency human repertoire genes may appear as antigen-associated changes if baseline usage is ignored.
+
+---
+
+### 🔬 Example 2 — TRBV Gene Enrichment (EBV)
+
+| TRBV Gene | Human Baseline | EBV Frequency | log2 Enrichment | Interpretation |
+|---|---:|---:|---:|---|
+| TRBV12-3 | 0.0133 | 0.1242 | +3.22 | Strong enrichment relative to baseline |
+| TRBV29-1 | 0.0117 | 0.0708 | +2.60 | Enriched but requires validation |
+| TRBV7-9 | 0.1743 | 0.2511 | +0.53 | Amplification of common gene usage |
+| TRBV6-5 | 0.0471 | 0.0038 | -3.65 | Strong depletion relative to baseline |
+
+**Observation:**  
+Large fold changes can result from low baseline frequency rather than true antigen specificity.
+
+---
+
+### 🔬 Example 3 — CDR3β Length Bias (CMV)
+
+| CDR3β Length | Human Baseline | CMV Frequency | log2 Enrichment | Interpretation |
+|---|---:|---:|---:|---|
+| 11 aa | 0.0117 | 0.0412 | +1.82 | Short CDR3 enrichment signal |
+| 18 aa | 0.0150 | 0.0293 | +0.97 | Increased usage |
+| 15 aa | 0.2052 | 0.2370 | +0.21 | Common repertoire length |
+| 17 aa | 0.1435 | 0.0703 | -1.03 | Reduced relative usage |
+
+**Observation:**  
+CDR3 length shifts must be evaluated against natural length distributions.
+
+---
+
+### 🔬 Example 4 — CDR3α Length Bias (EBV)
+
+| CDR3α Length | Human Baseline | EBV Frequency | log2 Enrichment | Interpretation |
+|---|---:|---:|---:|---|
+| 13 aa | 0.3288 | 0.4477 | +0.45 | Expansion of dominant baseline length |
+| 10 aa | 0.0136 | 0.0163 | +0.26 | Mild enrichment |
+| 9 aa | 0.0314 | 0.0009 | -5.08 | Strong depletion |
+
+**Observation:**  
+The most common CDR3 lengths in humans can dominate antigen datasets without representing unique specificity.
+
+---
+
+### 🧠 Main Conclusion
+
+Baseline comparison prevents false interpretation by distinguishing:
+
+**Natural repertoire architecture**  
+from  
+**Potential antigen-driven selection**
 
 ---
 
